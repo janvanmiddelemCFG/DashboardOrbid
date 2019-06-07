@@ -18,7 +18,7 @@ library(tidyr)
 library(plotly)
 
 
-server <- "CFGORBDAS1VP"
+server <- "ESDATA-CI001"
 database<- "Imperial"
 username <- "orbid"
 password <- "1qnP2u0LIQFCm16mS317qq8H3h8GAkIXJKi5F8368az6uJVPnv"
