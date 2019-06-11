@@ -89,9 +89,9 @@ shinyServer(function(input, output, session) {
     
     plant = input$Factory
     department = input$sectie
-    date_max_entry <- as.POSIXct(input$DatumRange[2], format = "%Y-%m-%d")-2*3600
+    date_max_entry <- as.POSIXct(input$DatumRange[2], format = "%Y-%m-%d")-1*3600
     date_max <- date_max_entry
-    date_min_entry <- as.POSIXct(input$DatumRange[1], format = "%Y-%m-%d")-2*3600
+    date_min_entry <- as.POSIXct(input$DatumRange[1], format = "%Y-%m-%d")-1*3600
     date_min <- date_min_entry-24*3600
 
     dataset_gg <- filter(dataset, dataset$PlantID == plant, dataset$DepartmentID %in% department, dataset$ProdDate <= date_max & dataset$ProdDate >= date_min)
